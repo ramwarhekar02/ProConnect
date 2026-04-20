@@ -137,66 +137,6 @@ npm run dev
 
 Frontend will start on `http://localhost:5173`
 
----
-
-## Configuration
-
-### Backend (.env file)
-
-```env
-# Server
-PORT=5000
-NODE_ENV=development
-
-# Database
-MONGODB_URI=mongodb://localhost:27017/oee-monitoring
-
-# JWT
-JWT_SECRET=your_secret_key_here_min_32_chars
-JWT_EXPIRE=24h
-
-# Admin Credentials
-ADMIN_USERNAME=admin
-ADMIN_PASSWORD=Admin@123
-
-# CORS
-CORS_ORIGIN=http://localhost:5173,http://localhost:3000
-
-# Rate Limiting
-RATE_LIMIT_WINDOW_MS=900000
-RATE_LIMIT_MAX_REQUESTS=100
-
-# Machine Configuration
-MACHINE_HEARTBEAT_TIMEOUT=10000
-
-# MQTT / HiveMQ Cloud
-MQTT_ENABLED=true
-MQTT_HOST=your_cluster.s1.eu.hivemq.cloud
-MQTT_PORT=8883
-MQTT_USERNAME=your_hivemq_username
-MQTT_PASSWORD=your_hivemq_password
-MQTT_TOPIC=esp32/sensors
-MQTT_CLIENT_ID=oee-backend-client
-MQTT_MACHINE_ID=KM-001
-MQTT_TLS_REJECT_UNAUTHORIZED=false
-MQTT_STORE_IDLE_WINDOWS=false
-MQTT_AGGREGATION_WINDOW_SECONDS=60
-MQTT_MAX_DELTA_SECONDS=10
-
-# OEE Mapping
-OEE_IDEAL_CYCLE_TIME_SECONDS=1
-```
-
-### Frontend (.env file)
-
-```env
-VITE_API_BASE_URL=http://localhost:5000/api
-VITE_SOCKET_URL=http://localhost:5000
-```
-
----
-
-## Usage
 
 ### Login
 
